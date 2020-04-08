@@ -162,6 +162,13 @@
 -- SELECT * FROM employee
 -- WHERE reports_to = 2
 
+-- -- Alternative to the above, below is a nested function
+
+--SELECT * FROM employee
+--WHERE reports_to = (SELECT employee_id FROM employee
+--WHERE first_name = 'Nancy'
+--AND last_name = 'Edwards')
+
 
 -- 5.
 -- SELECT * FROM employee
